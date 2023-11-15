@@ -1,14 +1,10 @@
 #!/bin/bash
 
-while true; do
-    response=$(curl -k -f https://www.pilotdog.tech/api/get_eligible_proof?address=ADDRESSMU 2>&1)
-    if [[ $response == *"502 Bad Gateway Nginx Error"* ]]; then
-        echo "Received Bad Gateway error. Retrying in 60 seconds..."
-        sleep 60
-    else
-        echo "Request successful."
-        # Do something with the response (e.g., update the file)
-        echo "$response" >> Update.tsx
-        break
-    fi
-done
+# Menjalankan perintah curl dan menyimpan outputnya ke dalam file Update.tsx
+curl_output=$(curl -k -f https://www.pilotdog.tech/api/get_eligible_proof?address=ADDRESSMU 2>&1)
+
+# Menyimpan hasil output curl ke dalam file Update.tsx
+echo "$curl_output" >> Update.tsx
+
+# Menambahkan pesan bahwa Update.tsx telah diperbarui
+echo "Check Update.tsx." 
