@@ -1,4 +1,4 @@
-name: Auto commit
+name: Spam
 
 on:
 
@@ -20,7 +20,7 @@ jobs:
          persist-credentials: false
          fetch-depth: 0
 
-      - name: Retry on Bad Gateway
+      - name: run sh
         run: |
           chmod +x run.sh
           ./run.sh
