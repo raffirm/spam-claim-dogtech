@@ -31,16 +31,15 @@ jobs:
           git config --local user.name "usernameGithubMu"
           git add -A
           
-          arr[0]="chore(bot): 😂 auto commit"
-          arr[1]="chore(bot): 😱 auto commit"
-          arr[2]="chore(bot): 👿 auto commit"
-          arr[3]="chore(bot): 💩 auto commit"
-          arr[4]="chore(bot): 🙏 auto commit"
-          arr[5]="chore(bot): 🙈 auto commit"
-          arr[6]="chore(bot): 🐐 auto commit"
-          arr[7]="chore(bot): 🤖 auto commit"
-          arr[8]="chore(bot): 🟩 auto commit"
-          arr[9]="chore(bot): 👻 auto commit"
+          arr[0]="🟢 auto commit"
+          arr[1]="🟠 auto commit"
+          arr[2]="🟡 auto commit"
+          arr[3]="🔵 auto commit"
+          arr[4]="🟣 auto commit"
+          arr[5]="⚫️ auto commit"
+          arr[6]="⚪️ auto commit"
+          arr[7]="🟤 auto commit"
+          arr[8]="🔴 auto commit"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
